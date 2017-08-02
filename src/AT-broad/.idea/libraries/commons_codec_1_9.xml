@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="commons-codec-1.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-codec-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ESBFileAPI.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpclient-4.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-4.4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxen-1.1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-log4j12-1.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xml-apis-1.0.b2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsch-0.1.54.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

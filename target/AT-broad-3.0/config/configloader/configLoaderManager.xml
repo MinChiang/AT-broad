@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configLoaders>
+
+
+<!--	<configLoader name="channelConfigLoader" remark="" no="5">
+		<class>com.configloader.ChannelConfigLoader</class>
+		<configPath>./config/serviceIdentify/serviceIdentify.xml</configPath>
+	</configLoader>
+
+	<configLoader name="systemConfigLoader" remark="" no="4">
+		<class>com.configloader.SystemConfigLoader</class>
+		<configPath>./config/systemIdentify/systemIdentify.xml</configPath>
+	</configLoader>-->
+
+	<configLoader name="serverConfigLoader" remark="" no="3">
+		<class>com.configloader.ServerConfigLoader</class>
+		<configPath>./config/serverConfig/serverConfig.xml</configPath>
+	</configLoader>
+
+	<configLoader name="invokerHandlerConfigLoader" remark=""
+		no="2">
+		<class>com.configloader.InvokerHandlerConfigLoader</class>
+		<configPath>./config/invokerHandler/invokerHandler.xml</configPath>
+	</configLoader>
+	
+	<configLoader name="invokerConfigLoader" remark="" no="1">
+		<class>com.configloader.InvokerConfigLoader</class>
+		<configPath>./config/invoker/invoker.xml</configPath>
+	</configLoader>
+
+</configLoaders>

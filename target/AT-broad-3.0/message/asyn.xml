@@ -1,0 +1,25 @@
+00000755<?xml version="1.0" encoding="UTF-8"?>
+<service version="2.0">
+        <SYS_HEAD>
+                <SvcCd>140070</SvcCd>
+                <SvcScn>02</SvcScn>
+                <SvcVer>V001</SvcVer>
+                <CnsmrId>101001</CnsmrId>
+                <CnsmrSeqNo>50087940985</CnsmrSeqNo>
+                <TxnDt>20170606</TxnDt>
+                <TxnTm>1512930</TxnTm>
+                <OrigCnsmrId>101001</OrigCnsmrId>
+                <OrigCnsmrSeqNo>50087940985</OrigCnsmrSeqNo>
+                <OrigTxnDt>20170606</OrigTxnDt>
+                <OrigTxnTm>1512930</OrigTxnTm>
+        </SYS_HEAD>
+        <APP_HEAD>
+
+        </APP_HEAD>
+        <LOCAL_HEAD>
+
+        </LOCAL_HEAD>
+        <BODY>
+                <RvctTp>jm</RvctTp>
+        </BODY>
+</service>

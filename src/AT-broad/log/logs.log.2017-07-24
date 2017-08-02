@@ -1,0 +1,38 @@
+2017-07-24 16:56:30 728 main DEBUG com.app.ServerStartup.main (ServerStartup.java:29) - 正在进行初始化操作
+2017-07-24 16:56:30 996 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器messageSelectorInvoker:com.invoker.MessageSelectorInvoker@3ee7f6eb
+2017-07-24 16:56:30 997 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器fixMessageInvoker2:com.invoker.FixMessageInovker@7e0b6ef8
+2017-07-24 16:56:30 999 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器fixMessageInvoker:com.invoker.FixMessageInovker@45c3e9ba
+2017-07-24 16:56:30 999 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolReaderInvoker:com.invoker.ProtocolReaderInvoker@4125d61e
+2017-07-24 16:56:30 999 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolWriterInvoker:com.invoker.ProtocolWriterInvoker@1b0c6cfc
+2017-07-24 16:56:31 000 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器delayInvoker:com.invoker.DelayInvoker@4cc72243
+2017-07-24 16:56:31 000 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolWriterInvoker2:com.invoker.ProtocolWriterInvoker@259a8416
+2017-07-24 16:56:31 000 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器fileServerInvoker:com.invoker.FileServerInvoker@4355d3a3
+2017-07-24 16:56:31 000 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第1个配置：com.configloader.InvokerConfigLoader@37b994de
+2017-07-24 16:56:31 021 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第2个配置：com.configloader.InvokerHandlerConfigLoader@6d46b6db
+2017-07-24 16:56:31 043 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第3个配置：com.configloader.ServerConfigLoader@239c7c21
+2017-07-24 16:56:31 056 main DEBUG com.app.ServerStartup.main (ServerStartup.java:31) - 正在对监控程序初始化操作
+2017-07-24 16:56:31 057 Thread-ESB1 INFO  com.server.TCPServer.run (TCPServer.java:72) - 已经开启对ESB1的TCP监听，端口为：27401
+2017-07-24 16:56:31 057 Thread-ESB2 INFO  com.server.TCPServer.run (TCPServer.java:72) - 已经开启对ESB2的TCP监听，端口为：11112
+2017-07-24 17:14:05 180 main DEBUG com.app.ServerStartup.main (ServerStartup.java:29) - 正在进行初始化操作
+2017-07-24 17:14:05 344 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器messageSelectorInvoker:com.invoker.MessageSelectorInvoker@760951a0
+2017-07-24 17:14:05 344 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器fixMessageInvoker:com.invoker.FixMessageInovker@34e0e90
+2017-07-24 17:14:05 346 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolReaderInvoker:com.invoker.ProtocolReaderInvoker@4b2922f6
+2017-07-24 17:14:05 346 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolWriterInvoker:com.invoker.ProtocolWriterInvoker@79b66b06
+2017-07-24 17:14:05 347 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器delayInvoker:com.invoker.DelayInvoker@372c9557
+2017-07-24 17:14:05 347 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第1个配置：com.configloader.InvokerConfigLoader@50009f0d
+2017-07-24 17:14:05 368 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第2个配置：com.configloader.InvokerHandlerConfigLoader@2a8ab08f
+2017-07-24 17:14:05 391 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第3个配置：com.configloader.ServerConfigLoader@e11e831
+2017-07-24 17:14:05 405 main DEBUG com.app.ServerStartup.main (ServerStartup.java:31) - 正在对监控程序初始化操作
+2017-07-24 17:14:05 405 Thread-CSPG INFO  com.server.TCPServer.run (TCPServer.java:72) - 已经开启对CSPG的TCP监听，端口为：38082
+2017-07-24 17:14:50 068 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              15                      83      31    98                      38      55    51      68 16 29                                  8713                              19         43              57         34              89         33              
+2017-07-24 17:14:50 069 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+0000000174000111111111111111111111111111111115555566666601234567890123456789012345678901234567892218888888888888888111111111111111111111111111111111111111111111111888888886666661555551
+
+2017-07-24 17:14:50 069 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第1个接收的交易，所用处理时间为：2
+2017-07-24 17:17:03 666 pool-1-thread-2 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              15                      83      31    98                      38      55    51      68 16 29                                  8713                              19         43              57         34              89         33              
+2017-07-24 17:17:03 666 pool-1-thread-2 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+0000000174000111111111111111111111111111111115555566666601234567890123456789012345678901234567892218888888888888888111111111111111111111111111111111111111111111111888888886666661555551
+
+2017-07-24 17:17:03 669 pool-1-thread-2 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第2个接收的交易，所用处理时间为：4

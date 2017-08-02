@@ -1,0 +1,78 @@
+2017-08-02 15:34:19 675 pool-1-thread-6 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：00000838，报文为：
+<?xml version="1.0" encoding="UTF-8"?>
+<service version="2.0">
+	<SYS_HEAD>
+		<SvcCd>140070</SvcCd>
+		<SvcScn>01</SvcScn>
+		<SvcVer>V001</SvcVer>
+		<CnsmrId>101001</CnsmrId>
+		<CnsmrSeqNo>50087940985</CnsmrSeqNo>
+		<TxnDt>20170606</TxnDt>
+		<TxnTm>1512930</TxnTm>
+		<OrigCnsmrId>101001</OrigCnsmrId>
+		<OrigCnsmrSeqNo>50087940985</OrigCnsmrSeqNo>
+		<OrigTxnDt>20170606</OrigTxnDt>
+		<OrigTxnTm>1512930</OrigTxnTm>
+	</SYS_HEAD>
+	<APP_HEAD>
+
+	</APP_HEAD>
+	<LOCAL_HEAD>
+
+	</LOCAL_HEAD>
+	<BODY>
+		<RvctTp>203204</RvctTp>
+		<NoteNo>140258803003720100826100019968</NoteNo>
+		<ElecSign/>
+		<RvctApplyerTp>RC01</RvctApplyerTp>
+		<RvctApplyerOrgCd>27175344-2</RvctApplyerOrgCd>
+		<RvctApplyerAcctNo>80020000000152908</RvctApplyerAcctNo>
+		<RvctApplyerBankAcctNo>314588022422</RvctApplyerBankAcctNo>
+	</BODY>
+</service>
+2017-08-02 15:34:19 677 pool-1-thread-6 DEBUG com.invoker.AsynReturnInvoker.invoke (AsynReturnInvoker.java:87) - 开始向host:96.0.50.68,port:27402发送报文:
+00000755<?xml version="1.0" encoding="UTF-8"?>
+<service version="2.0">
+        <SYS_HEAD>
+                <SvcCd>140070</SvcCd>
+                <SvcScn>02</SvcScn>
+                <SvcVer>V001</SvcVer>
+                <CnsmrId>101001</CnsmrId>
+                <CnsmrSeqNo>50087940985</CnsmrSeqNo>
+                <TxnDt>20170606</TxnDt>
+                <TxnTm>1512930</TxnTm>
+                <OrigCnsmrId>101001</OrigCnsmrId>
+                <OrigCnsmrSeqNo>50087940985</OrigCnsmrSeqNo>
+                <OrigTxnDt>20170606</OrigTxnDt>
+                <OrigTxnTm>1512930</OrigTxnTm>
+        </SYS_HEAD>
+        <APP_HEAD>
+
+        </APP_HEAD>
+        <LOCAL_HEAD>
+
+        </LOCAL_HEAD>
+        <BODY>
+                <RvctTp>jm</RvctTp>
+        </BODY>
+</service>
+
+2017-08-02 15:34:19 678 pool-1-thread-6 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:00000239，报文为:
+<?xml version="1.0" encoding="UTF-8"?>
+<service version="2.0">
+	<SYS_HEAD>
+		<SvcCd>140070</SvcCd>
+		<SvcScn>01</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+
+	</APP_HEAD>
+	<LOCAL_HEAD>
+
+	</LOCAL_HEAD>
+	<BODY>
+		<MSG>SUCCESS</MSG>
+	</BODY>
+</service>
+
+2017-08-02 15:34:19 678 pool-1-thread-6 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第6个接收的交易，所用处理时间为：5

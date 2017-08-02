@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<systems>
+	<system name="CBS">
+		<port>27401</port>
+		<threadNum>5</threadNum>
+		<impClass>com.server.TCPServer</impClass>
+		<invokerHandler>tcp_default</invokerHandler>
+	</system>
+</systems>

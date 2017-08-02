@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<invokers>
+    <messageSelectorInvoker name="messageSelectorInvoker"
+                            class="com.invoker.MessageSelectorInvoker">
+        <param class="string" name="msgPath" value="/service/SYS_HEAD/SERVICE_CODE"/>
+        <selectDictionary class="com.invoker.selector.Selector"
+                          name="selectDictionary">
+            <param class="java.io.File" name="selectDictionary" value="./message/"/>
+        </selectDictionary>
+    </messageSelectorInvoker>
+
+    <protocolReaderInvoker name="protocolReaderInvoker"
+                           class="com.invoker.ProtocolReaderInvoker">
+        <param class="int" name="headLength" value="8"/>
+        <param class="java.nio.charset.Charset" name="encoding" value="UTF-8"/>
+    </protocolReaderInvoker>
+
+    <protocolWriterInvoker name="protocolWriterInvoker"
+                           class="com.invoker.ProtocolWriterInvoker">
+        <param class="int" name="headLength" value="8"/>
+        <param class="java.nio.charset.Charset" name="encoding" value="UTF-8"/>
+    </protocolWriterInvoker>
+
+    <fixMessageInvoker name="fixMessageInvoker"
+                       class="com.invoker.FixMessageInovker">
+        <param class="boolean" name="cache" value="false"/>
+        <param class="java.io.File" name="messageLoc" value="./message/response.xml"/>
+    </fixMessageInvoker>
+
+    <protocolReaderInvoker name="protocolReaderInvokerIBCP"
+                           class="com.invoker.ProtocolReaderInvoker">
+        <param class="int" name="headLength" value="0"/>
+        <param class="java.nio.charset.Charset" name="encoding" value="UTF-8"/>
+    </protocolReaderInvoker>
+
+    <protocolWriterInvoker name="protocolWriterInvokerIBCP"
+                           class="com.invoker.ProtocolWriterInvoker">
+        <param class="int" name="headLength" value="0"/>
+        <param class="java.nio.charset.Charset" name="encoding" value="UTF-8"/>
+    </protocolWriterInvoker>
+
+    <fixMessageInvoker name="fixMessageInvokerIBCP"
+                       class="com.invoker.FixMessageInovker">
+        <param class="boolean" name="cache" value="false"/>
+        <param class="java.io.File" name="messageLoc" value="./message/responseIBCP.xml"/>
+    </fixMessageInvoker>
+
+    
+    <delayInvoker name="delayInvoker" class="com.invoker.DelayInvoker">
+        <param class="long" name="delayTime" value="50000"/>
+    </delayInvoker>
+
+    <asynReturnInvoker name="asynReturnInvoker" class="com.invoker.AsynReturnInvoker">
+        <param class="java.io.File" name="messageLoc" value="./message/asyn.xml"/>
+        <param class="string" name="host" value="96.0.50.68"/>
+        <param class="int" name="port" value="27402"/>
+        <param class="string" name="charset" value="UTF-8"/>
+    </asynReturnInvoker>
+</invokers>

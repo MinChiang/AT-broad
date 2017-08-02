@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invokerHandlers>
+    <invokerHandler name="tcp_default">
+        <invokers>
+	    <invoker name="protocolReaderInvoker"/>
+            <invoker name="fixMessageInvoker"/>
+            <invoker name="protocolWriterInvoker"/>
+        </invokers>
+    </invokerHandler>
+
+    <invokerHandler name="http_default">
+        <invokers>
+	    <invoker name="protocolReaderInvokerIBCP"/>
+            <invoker name="fixMessageInvokerIBCP"/>
+            <invoker name="protocolWriterInvokerIBCP"/>
+        </invokers>
+    </invokerHandler>
+</invokerHandlers>

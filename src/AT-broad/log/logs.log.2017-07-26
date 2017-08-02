@@ -1,0 +1,89 @@
+2017-07-26 15:18:16 146 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 15:18:16 148 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+174       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 15:18:16 148 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第3个接收的交易，所用处理时间为：4
+2017-07-26 15:18:38 422 pool-1-thread-4 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 15:18:38 423 pool-1-thread-4 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+174       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 15:18:38 423 pool-1-thread-4 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第4个接收的交易，所用处理时间为：1
+2017-07-26 15:38:01 913 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 15:38:01 913 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+174       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 15:38:01 914 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第5个接收的交易，所用处理时间为：2
+2017-07-26 15:43:47 657 pool-1-thread-6 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 15:43:47 658 pool-1-thread-6 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+0000000174AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 15:43:47 658 pool-1-thread-6 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第6个接收的交易，所用处理时间为：2
+2017-07-26 15:46:26 063 main DEBUG com.app.ServerStartup.main (ServerStartup.java:29) - 正在进行初始化操作
+2017-07-26 15:46:26 233 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器messageSelectorInvoker:com.invoker.MessageSelectorInvoker@3ee7f6eb
+2017-07-26 15:46:26 233 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器fixMessageInvoker:com.invoker.FixMessageInovker@7e0b6ef8
+2017-07-26 15:46:26 235 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolReaderInvoker:com.invoker.ProtocolReaderInvoker@45c3e9ba
+2017-07-26 15:46:26 236 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolWriterInvoker:com.invoker.ProtocolWriterInvoker@4125d61e
+2017-07-26 15:46:26 236 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器delayInvoker:com.invoker.DelayInvoker@1b0c6cfc
+2017-07-26 15:46:26 236 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第1个配置：com.configloader.InvokerConfigLoader@4cc72243
+2017-07-26 15:46:26 257 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第2个配置：com.configloader.InvokerHandlerConfigLoader@32d8ca48
+2017-07-26 15:46:26 279 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第3个配置：com.configloader.ServerConfigLoader@5e628704
+2017-07-26 15:46:26 291 main DEBUG com.app.ServerStartup.main (ServerStartup.java:31) - 正在对监控程序初始化操作
+2017-07-26 15:46:26 292 Thread-CSPG INFO  com.server.TCPServer.run (TCPServer.java:72) - 已经开启对CSPG的TCP监听，端口为：38082
+2017-07-26 15:47:03 362 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 15:47:03 365 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+174       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 15:47:03 365 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第1个接收的交易，所用处理时间为：4
+2017-07-26 15:48:26 953 pool-1-thread-2 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 15:48:26 954 pool-1-thread-2 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+174       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 15:48:26 957 pool-1-thread-2 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第2个接收的交易，所用处理时间为：5
+2017-07-26 15:54:11 585 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 15:54:11 586 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+174       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 15:54:11 586 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第3个接收的交易，所用处理时间为：4
+2017-07-26 15:58:58 370 pool-1-thread-4 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 15:58:58 370 pool-1-thread-4 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+174       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 15:58:58 371 pool-1-thread-4 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第4个接收的交易，所用处理时间为：4
+2017-07-26 15:59:34 037 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 15:59:34 039 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+174       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 15:59:34 039 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第5个接收的交易，所用处理时间为：3
+2017-07-26 16:06:41 275 pool-1-thread-6 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 16:06:41 275 pool-1-thread-6 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000185，报文为:
+174       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   Y
+
+2017-07-26 16:06:41 276 pool-1-thread-6 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第6个接收的交易，所用处理时间为：4
+2017-07-26 16:15:04 793 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 16:15:04 794 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000464，报文为:
+453       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   YFAIL00                                                                                                                                                                                                                                                          20170505141414ok       
+
+2017-07-26 16:15:04 794 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第7个接收的交易，所用处理时间为：2
+2017-07-26 16:15:14 665 pool-1-thread-8 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 16:15:14 666 pool-1-thread-8 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000464，报文为:
+453       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   YFAIL00                                                                                                                                                                                                                                                          20170505141414ok       
+
+2017-07-26 16:15:14 666 pool-1-thread-8 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第8个接收的交易，所用处理时间为：2
+2017-07-26 16:15:37 243 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：0000000302，报文为：
+                                             80              22                      68      45    48                      86      21    39      90 36 19                                  4838                              84         99              9          66              90         63              
+2017-07-26 16:15:37 244 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:0000000464，报文为:
+453       AAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1.0.12.10.21111111111111111111122222222222222222222AZCENSEMBLETELLER  HOMEHOMEHOMEHOMEHOME    DCFSDCFSDCFSDCFSDCFS    199305241449  A00   YFAIL00                                                                                                                                                                                                                                                          20170505141414ok       
+
+2017-07-26 16:15:37 244 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第9个接收的交易，所用处理时间为：2

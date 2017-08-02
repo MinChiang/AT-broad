@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service version="2.0">
+	<SYS_HEAD>
+		<SvcCd>140070</SvcCd>
+		<SvcScn>01</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+
+	</APP_HEAD>
+	<LOCAL_HEAD>
+
+	</LOCAL_HEAD>
+	<BODY>
+		<MSG>SUCCESS</MSG>
+	</BODY>
+</service>

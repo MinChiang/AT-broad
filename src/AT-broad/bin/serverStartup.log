@@ -1,0 +1,1394 @@
+Listening for transport dt_socket at address: 55524
+2017-07-27 11:54:21 175 main DEBUG com.app.ServerStartup.main (ServerStartup.java:29) - 正在进行初始化操作
+2017-07-27 11:54:21 347 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器messageSelectorInvoker:com.invoker.MessageSelectorInvoker@3ee7f6eb
+2017-07-27 11:54:21 347 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器fixMessageInvoker:com.invoker.FixMessageInovker@7e0b6ef8
+2017-07-27 11:54:21 350 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolReaderInvokerIBCP:com.invoker.ProtocolReaderInvoker@45c3e9ba
+2017-07-27 11:54:21 350 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolReaderInvoker:com.invoker.ProtocolReaderInvoker@4125d61e
+2017-07-27 11:54:21 350 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolWriterInvoker:com.invoker.ProtocolWriterInvoker@1b0c6cfc
+2017-07-27 11:54:21 350 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器fixMessageInvokerIBCP:com.invoker.FixMessageInovker@4cc72243
+2017-07-27 11:54:21 351 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器delayInvoker:com.invoker.DelayInvoker@259a8416
+2017-07-27 11:54:21 351 main INFO  com.configloader.InvokerConfigLoader.read (InvokerConfigLoader.java:53) - 开始加载执行器protocolWriterInvokerIBCP:com.invoker.ProtocolWriterInvoker@4355d3a3
+2017-07-27 11:54:21 351 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第1个配置：com.configloader.InvokerConfigLoader@37b994de
+2017-07-27 11:54:21 372 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第2个配置：com.configloader.InvokerHandlerConfigLoader@18f6559
+2017-07-27 11:54:21 394 main INFO  com.configloadermanager.ConfigLoaderManager.batchLoad (ConfigLoaderManager.java:87) - 加载第3个配置：com.configloader.ServerConfigLoader@7f6877f8
+2017-07-27 11:54:21 422 Thread-IBCP INFO  com.server.HTTPServer.run (HTTPServer.java:79) - 已经开启对IBCP的HTTP监听，端口为：9092
+2017-07-27 11:54:21 423 Thread-CSPG INFO  com.server.TCPServer.run (TCPServer.java:72) - 已经开启对CSPG的TCP监听，端口为：38082
+2017-07-27 11:54:21 423 main DEBUG com.app.ServerStartup.main (ServerStartup.java:31) - 正在对监控程序初始化操作
+2017-07-27 11:54:25 443 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+
+2017-07-27 11:54:25 447 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 11:54:25 448 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第1个接收的交易，所用处理时间为：6
+2017-07-27 11:54:56 113 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 11:54:56 114 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 11:54:56 114 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第2个接收的交易，所用处理时间为：1
+2017-07-27 14:18:03 424 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:18:03 426 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:18:03 426 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第3个接收的交易，所用处理时间为：2
+2017-07-27 14:18:41 491 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:18:41 492 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:18:41 493 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第4个接收的交易，所用处理时间为：2
+2017-07-27 14:19:24 655 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:19:24 655 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:19:24 656 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第5个接收的交易，所用处理时间为：2
+2017-07-27 14:19:51 530 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:19:51 531 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:19:51 531 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第6个接收的交易，所用处理时间为：1
+2017-07-27 14:23:02 454 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:23:02 458 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:23:02 458 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第7个接收的交易，所用处理时间为：4
+2017-07-27 14:24:08 331 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:24:08 332 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:24:08 333 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第8个接收的交易，所用处理时间为：2
+2017-07-27 14:24:14 407 pool-1-thread-6 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:24:14 408 pool-1-thread-6 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:24:14 408 pool-1-thread-6 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第9个接收的交易，所用处理时间为：1
+2017-07-27 14:24:36 044 pool-1-thread-8 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:24:36 045 pool-1-thread-8 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:24:36 045 pool-1-thread-8 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第10个接收的交易，所用处理时间为：1
+2017-07-27 14:24:42 658 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:24:42 659 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:24:42 659 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第11个接收的交易，所用处理时间为：2
+2017-07-27 14:25:33 869 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:25:33 870 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:25:33 871 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第12个接收的交易，所用处理时间为：2
+2017-07-27 14:32:12 254 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:32:12 255 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:32:12 255 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第13个接收的交易，所用处理时间为：1
+2017-07-27 14:32:32 964 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:32:32 965 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:32:32 965 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第14个接收的交易，所用处理时间为：1
+2017-07-27 14:32:57 906 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:32:57 907 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:32:57 907 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第15个接收的交易，所用处理时间为：1
+2017-07-27 14:33:10 320 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:33:10 321 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:33:10 321 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第16个接收的交易，所用处理时间为：1
+2017-07-27 14:51:31 774 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 14:51:31 775 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 14:51:31 775 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第17个接收的交易，所用处理时间为：1
+2017-07-27 15:52:19 036 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 15:52:19 036 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 15:52:19 037 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第18个接收的交易，所用处理时间为：1
+2017-07-27 15:52:36 276 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 15:52:36 277 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 15:52:36 278 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第19个接收的交易，所用处理时间为：2
+2017-07-27 15:54:03 415 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 15:54:03 416 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 15:54:03 417 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第20个接收的交易，所用处理时间为：2
+2017-07-27 15:54:43 883 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 15:54:43 883 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 15:54:43 884 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第21个接收的交易，所用处理时间为：1
+2017-07-27 16:02:59 812 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:02:59 813 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:02:59 814 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第22个接收的交易，所用处理时间为：2
+2017-07-27 16:07:07 822 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:07:07 823 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:07:07 823 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第23个接收的交易，所用处理时间为：1
+2017-07-27 16:07:23 244 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:07:23 245 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:07:23 249 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第24个接收的交易，所用处理时间为：5
+2017-07-27 16:08:08 887 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:08:08 888 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:08:08 889 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第25个接收的交易，所用处理时间为：2
+2017-07-27 16:12:17 573 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:12:17 573 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:12:17 574 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第26个接收的交易，所用处理时间为：2
+2017-07-27 16:36:18 999 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:36:19 000 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:36:19 000 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第27个接收的交易，所用处理时间为：1
+2017-07-27 16:37:40 571 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:37:40 572 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:37:40 572 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第28个接收的交易，所用处理时间为：1
+2017-07-27 16:49:52 026 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:49:52 027 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:49:52 027 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第29个接收的交易，所用处理时间为：1
+2017-07-27 16:50:15 710 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:50:15 711 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:50:15 711 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第30个接收的交易，所用处理时间为：1
+2017-07-27 16:51:53 286 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-27 16:51:53 286 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-27 16:51:53 287 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第31个接收的交易，所用处理时间为：1
+2017-07-28 15:25:13 012 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 15:25:13 013 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-28 15:25:13 013 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第32个接收的交易，所用处理时间为：1
+2017-07-28 15:52:57 512 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 15:52:57 513 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:255，报文为:
+00000246<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<SYS_HEAD>
+		<SvcCd>80021000001</SvcCd>
+		<SvcScn>02</SvcScn>
+	</SYS_HEAD>
+	<APP_HEAD>
+		<array>
+			<Ret>
+				<RetCd>000000</RetCd>
+			</Ret>
+		</array>
+	</APP_HEAD>
+	<BODY>
+		
+	</BODY>
+</service>
+
+2017-07-28 15:52:57 513 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第33个接收的交易，所用处理时间为：1
+2017-07-28 15:57:02 326 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 15:57:02 327 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:424，报文为:
+00000415<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+
+        </BODY>
+</service>
+
+2017-07-28 15:57:02 328 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第34个接收的交易，所用处理时间为：2
+2017-07-28 15:59:13 334 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 15:59:13 334 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:424，报文为:
+00000415<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+
+        </BODY>
+</service>
+
+2017-07-28 15:59:13 335 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第35个接收的交易，所用处理时间为：2
+2017-07-28 16:02:05 186 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:02:05 187 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:424，报文为:
+00000415<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+
+        </BODY>
+</service>
+
+2017-07-28 16:02:05 187 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第36个接收的交易，所用处理时间为：1
+2017-07-28 16:02:51 014 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:02:51 015 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:424，报文为:
+00000415<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+
+        </BODY>
+</service>
+
+2017-07-28 16:02:51 015 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第37个接收的交易，所用处理时间为：1
+2017-07-28 16:10:43 597 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:10:43 598 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 16:10:43 598 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第38个接收的交易，所用处理时间为：1
+2017-07-28 16:13:14 182 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:13:14 183 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 16:13:14 183 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第39个接收的交易，所用处理时间为：1
+2017-07-28 16:37:02 717 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:37:02 717 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 16:37:02 718 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第40个接收的交易，所用处理时间为：2
+2017-07-28 16:46:06 647 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:46:06 648 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 16:46:06 648 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第41个接收的交易，所用处理时间为：1
+2017-07-28 16:47:48 061 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:47:48 062 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 16:47:48 062 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第42个接收的交易，所用处理时间为：1
+2017-07-28 16:47:55 478 pool-1-thread-2 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:47:55 479 pool-1-thread-2 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 16:47:55 480 pool-1-thread-2 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第43个接收的交易，所用处理时间为：2
+2017-07-28 16:48:01 749 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:48:01 750 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 16:48:01 751 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第44个接收的交易，所用处理时间为：2
+2017-07-28 16:52:36 757 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:52:36 758 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 16:52:36 759 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第45个接收的交易，所用处理时间为：2
+2017-07-28 16:53:24 978 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890                 </BrchName></BODY></service>
+2017-07-28 16:53:24 979 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 16:53:24 979 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第46个接收的交易，所用处理时间为：1
+2017-07-28 17:12:13 423 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>null</BrchName></BODY></service>
+2017-07-28 17:12:13 424 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:12:13 425 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第47个接收的交易，所用处理时间为：2
+2017-07-28 17:15:13 333 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>null</BrchName></BODY></service>
+2017-07-28 17:15:13 334 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:15:13 334 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第48个接收的交易，所用处理时间为：1
+2017-07-28 17:18:31 512 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>null</BrchName></BODY></service>
+2017-07-28 17:18:31 513 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:18:31 513 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第49个接收的交易，所用处理时间为：1
+2017-07-28 17:19:40 783 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>null</BrchName></BODY></service>
+2017-07-28 17:19:40 784 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:19:40 784 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第50个接收的交易，所用处理时间为：1
+2017-07-28 17:23:38 050 pool-1-thread-7 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>null</BrchName></BODY></service>
+2017-07-28 17:23:38 051 pool-1-thread-7 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:23:38 051 pool-1-thread-7 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第51个接收的交易，所用处理时间为：1
+2017-07-28 17:32:09 755 pool-1-thread-9 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>null</BrchName></BODY></service>
+2017-07-28 17:32:09 756 pool-1-thread-9 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:32:09 757 pool-1-thread-9 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第52个接收的交易，所用处理时间为：2
+2017-07-28 17:33:20 618 pool-1-thread-1 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>null</BrchName></BODY></service>
+2017-07-28 17:33:20 619 pool-1-thread-1 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:33:20 619 pool-1-thread-1 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第53个接收的交易，所用处理时间为：1
+2017-07-28 17:36:25 209 pool-1-thread-3 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890</BrchName></BODY></service>
+2017-07-28 17:36:25 210 pool-1-thread-3 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:36:25 210 pool-1-thread-3 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第54个接收的交易，所用处理时间为：1
+2017-07-28 17:54:43 034 pool-1-thread-5 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890</BrchName></BODY></service>
+2017-07-28 17:54:43 035 pool-1-thread-5 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:54:43 035 pool-1-thread-5 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第55个接收的交易，所用处理时间为：1
+2017-07-28 17:54:47 433 pool-1-thread-6 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890</BrchName></BODY></service>
+2017-07-28 17:54:47 434 pool-1-thread-6 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>111111</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:54:47 435 pool-1-thread-6 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第56个接收的交易，所用处理时间为：2
+2017-07-28 17:55:14 705 pool-1-thread-8 DEBUG com.invoker.ProtocolReaderInvoker.invoke (ProtocolReaderInvoker.java:70) - 读取的长度头为：，报文为：
+<?xml version="1.0" encoding="UTF-8"?><service><SYS_HEAD><SvcCd> 5</SvcCd><SvcVer>21234</SvcVer><CnsmrSeqNo>12345678901234567890</CnsmrSeqNo><TxnDt>1414100Y</TxnDt><TxnTm>123456</TxnTm><array><Ret><RetCd>89012</RetCd></Ret></array></SYS_HEAD><APP_HEAD><TlrNo>1234567890010510620 </TlrNo><array></array><array></array></APP_HEAD><BODY><BrchName>45678901234567890123456789012345678901234567890</BrchName></BODY></service>
+2017-07-28 17:55:14 706 pool-1-thread-8 DEBUG com.invoker.ProtocolWriterInvoker.invoke (ProtocolWriterInvoker.java:65) - 写出的长度头为:546，报文为:
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
+
+2017-07-28 17:55:14 707 pool-1-thread-8 DEBUG com.frame.transaction.AbstractSystemTransaction.end (AbstractSystemTransaction.java:51) - 第57个接收的交易，所用处理时间为：2

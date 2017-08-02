@@ -1,0 +1,23 @@
+00000537<?xml version="1.0" encoding="UTF-8"?>
+<service>
+        <SYS_HEAD>
+                <SvcCd>80021000001</SvcCd>
+                <SvcScn>02</SvcScn>
+		<SvcVer>123</SvcVer>
+		<CnsmrSeqNo>5524</CnsmrSeqNo>
+		<TlrNo>888</TlrNo>
+		<TxnDt>AABB</TxnDt>
+		<TxnTm>CCDD</TxnTm>
+		<array>
+                        <Ret>
+                                <RetCd>000000</RetCd>
+                        </Ret>
+                </array>
+        </SYS_HEAD>
+        <APP_HEAD>
+                
+        </APP_HEAD>
+        <BODY>
+		
+        </BODY>
+</service>
